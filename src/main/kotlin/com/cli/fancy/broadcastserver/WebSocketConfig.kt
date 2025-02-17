@@ -9,7 +9,7 @@ import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBr
 import org.springframework.web.socket.config.annotation.StompEndpointRegistry
 
 
-@Configuration
+/*@Configuration
 @EnableScheduling
 @EnableWebSocketMessageBroker
 class WebSocketConfig : AbstractSessionWebSocketMessageBrokerConfigurer<Session>() {
@@ -21,4 +21,4 @@ class WebSocketConfig : AbstractSessionWebSocketMessageBrokerConfigurer<Session>
         registry.enableSimpleBroker("/queue/", "/topic/")
         registry.setApplicationDestinationPrefixes("/app")
     }
-}
+}*/
