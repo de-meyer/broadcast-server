@@ -9,10 +9,9 @@ import kotlin.concurrent.thread
 @Controller
 class GreetingController {
 
-    @MessageMapping("/hello")
-    @SendTo("/topic/greetings")
-    fun greeting(message: HelloMessage): GreetingMessage {
-        Thread.sleep(1000) // simulated delay
-        return GreetingMessage("Hello, " + HtmlUtils.htmlEscape(message.getName()) + "!")
+    @MessageMapping("/message")
+    @SendTo("/topic/messages")
+    fun greeting(message: String): String {
+    return "message: $message"
     }
 }
